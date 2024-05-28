@@ -1,114 +1,117 @@
-.tarot {
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 70%;
-    height: 70vh;
-    
-    border: 1px solid goldenrod;
-    border-radius: 10px;
-    color: white;
-    font-size: 5vh;
-    font-family: 'Times New Roman';
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    align-content: center;
-}
-
-.folded {
-    background-image: url(media/back.png);
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: #f1f1f1;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-
-    transition: .5s ease; /*todo da risolvere con la rotazione*/
-
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-
-    .description {
-        position: relative;
-        color: goldenrod;
-    }
-
-    .number {
-        position: absolute;
-        left: 6.6%;
-        border: 1px solid goldenrod;
-        border-radius: 10px;
-        width: 95%;
-
-        top: 2.5%;
-    }
-
-    .name {
-        position: absolute;
-        left: 6.6%;
-        border: 1px solid goldenrod;
-        border-radius: 10px;
-        width: 95%;
-
-        bottom: 2.5%;
-    }
-}
-
-.unfolded:hover {
-    .overlay {
-        opacity: 1;
-    }
-}
-
 main {
     font-family: 'Times New Roman';
     color: white;
+
+    .btn {
+        background-color: goldenrod;
+        color: black;
+        border: 1px solid black;
+    }
+    .btn:hover {
+        background-color: rgb(177, 134, 26);
+    }
 }
 
-.title {
-    font-family: 'Times New Roman';
-    font-weight: bold;
-    font-size: 5vh;
-    color: goldenrod;
-}
-
-.subtitle {
-    font-family: 'Times New Roman';
-    font-weight: italic;
-    font-size: 2vh;
-    color: white;
-
-    margin-top: -2vh;
-}
-
-.btn {
-    background-color: goldenrod;
-    color: black;
-    border: 1px solid black;
-}
-.btn:hover {
-    background-color: rgb(177, 134, 26);
+header {
+    .title {
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        font-size: 5vh;
+        color: goldenrod;
+    }
+    
+    .subtitle {
+        font-family: 'Times New Roman';
+        font-weight: italic;
+        font-size: 2vh;
+        color: white;
+    
+        margin-top: -2vh;
+    }
 }
 
 body {
     background-color: #242424;
     color: black;
     overflow-x: hidden;
+
+    .tarot {
+        margin-left: auto;
+        margin-right: auto;
+    
+        width: 70%;
+        height: 70vh;
+        
+        border: 1px solid goldenrod;
+        border-radius: 10px;
+        color: white;
+        font-size: 5vh;
+        font-family: 'Times New Roman';
+    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        align-content: center;
+    }
+    
+    .folded {
+        background-image: url(media/back.png);
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        color: #f1f1f1;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    
+        transition: opacity .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    
+        .description {
+            position: relative;
+            color: goldenrod;
+        }
+    
+        .number {
+            position: absolute;
+            left: 6.6%;
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+            width: 95%;
+    
+            top: 2.5%;
+        }
+    
+        .name {
+            position: absolute;
+            left: 6.6%;
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+            width: 95%;
+    
+            bottom: 2.5%;
+        }
+    }
+    
+    .unfolded:hover {
+        .overlay {
+            opacity: 1;
+        }
+    }
 }
 
-div {
-    /*border: 1px solid red;*/
+footer {
+    color: white;
 }
+
+/*div {border: 1px solid red;}*/
